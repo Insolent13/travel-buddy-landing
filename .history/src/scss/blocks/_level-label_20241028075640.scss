@@ -1,0 +1,68 @@
+.level-label {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+  
+    &--bg {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.level-label__count {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    color: #161c35;
+}
+
+.level-label__text {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 14px;
+    line-height: 1;
+    width: 30px;
+    border-top: 1px solid rgba(68, 68, 68, 0.3);
+    padding-top: 3px;
+    color: #444444;
+}
+
+.level-label__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.level-label__circle {
+    fill: transparent;
+    stroke: #ff8d30;
+    stroke-width: 3;
+}
+
+.level-label--large {
+    width: 100px;
+    height: 100px;
+  
+    .level-label__count {
+      font-size: 38px;
+      top: 19px;
+    }
+  
+    .level-label__text {
+      font-size: 18px;
+      top: 56px;
+      width: 51px;
+      padding-top: 7px;
+    }
+}

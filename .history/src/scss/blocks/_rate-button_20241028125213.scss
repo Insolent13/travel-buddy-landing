@@ -1,0 +1,17 @@
+.rate-button {
+    &:hover {
+      .rate-button__text,
+      .rate-button__svg {
+        opacity: 0.7;
+      }
+  
+      .rate-button__icon {
+        background-color: #e2e5f2;
+      }
+    }
+  
+    @media (min-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+    }
+}

@@ -1,0 +1,23 @@
+.profile {
+    background-color: #e6e8f1;
+    margin-top: -30px;
+    padding-top: 70px;
+    padding-bottom: 38px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    z-index: 3;
+  
+    @media (min-width: @tablet-width) {
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      margin-top: -60px;
+      padding-top: 134px;
+      padding-bottom: 60px;
+    }
+  
+    @media (min-width: desktop-width) {
+      padding-top: 162px;
+      padding-bottom: 81px;
+    }
+}

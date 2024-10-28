@@ -1,0 +1,45 @@
+.companion-promo-card {
+    position: relative;
+    display: grid;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+  
+    &:hover {
+      box-shadow: 0 4px 9px rgba(0, 0, 0, 0.16);
+  
+      .companion-promo-card__img {
+        transform: scale(1.1);
+      }
+    }
+  
+    &--online {
+      .companion-promo-card__title::before {
+        background-color: #81e31e;
+      }
+    }
+  
+    @media (min-width: $tablet-width) {
+      border-radius: 20px;
+    }
+}
+
+.companion-promo-card__avatar {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 270px;
+  
+    @media (min-width: $tablet-width) {
+      height: 285px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+}
+
+.companion-promo-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}

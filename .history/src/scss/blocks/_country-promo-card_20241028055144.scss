@@ -1,0 +1,8 @@
+.countrie-promo-card {
+    display: grid;
+    text-decoration: none;
+  
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 1fr min-content;
+    }
+}

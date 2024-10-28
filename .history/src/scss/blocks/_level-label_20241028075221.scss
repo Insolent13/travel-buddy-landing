@@ -1,0 +1,24 @@
+.level-label {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+  
+    &--bg {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.level-label__count {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    color: #161c35;
+}

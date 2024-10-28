@@ -1,0 +1,13 @@
+.level-label {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+  
+    &--bg {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }

@@ -1,0 +1,11 @@
+.tooltip {
+    position: relative;
+  
+    &:hover {
+      .tooltip__text {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+}
+

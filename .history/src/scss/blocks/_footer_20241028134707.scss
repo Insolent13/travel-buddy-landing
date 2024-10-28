@@ -1,0 +1,18 @@
+.footer {
+    background-color: #ffffff;
+    margin-top: auto;
+    padding-top: 7px;
+    padding-bottom: 20px;
+    position: relative;
+  
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-bottom: 32px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+      padding-bottom: 43px;
+    }
+}
+

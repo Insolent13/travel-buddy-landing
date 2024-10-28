@@ -1,0 +1,8 @@
+.creator {
+    @media (max-width: @mobile-width-only) {
+      width: 100%;
+      padding-top: 13px;
+      margin-top: 37px;
+      border-top: 1px solid #f2f2f2;
+    }
+  }

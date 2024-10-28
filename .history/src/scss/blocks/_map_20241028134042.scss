@@ -1,0 +1,8 @@
+.map {
+    background-color: #f7f7f7;
+    margin-top: -30px;
+  
+    @media (min-width: $tablet-width) {
+      margin-top: -60px;
+    }
+}

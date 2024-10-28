@@ -1,0 +1,25 @@
+.companion-promo-card {
+    position: relative;
+    display: grid;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+  
+    &:hover {
+      box-shadow: 0 4px 9px rgba(0, 0, 0, 0.16);
+  
+      .companion-promo-card__img {
+        transform: scale(1.1);
+      }
+    }
+  
+    &--online {
+      .companion-promo-card__title::before {
+        background-color: #81e31e;
+      }
+    }
+  
+    @media (min-width: @tablet-width) {
+      border-radius: 20px;
+    }
+}

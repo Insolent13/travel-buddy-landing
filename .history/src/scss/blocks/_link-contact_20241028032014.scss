@@ -1,0 +1,48 @@
+.link-contact {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-contact__icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #121936;
+    margin-right: 16px;
+  
+    @media (min-width: $tablet-width) {
+      width: 68px;
+      height: 68px;
+      margin-right: 23px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      width: 90px;
+      height: 90px;
+      margin-right: 30px;
+    }
+}
+
+.link-contact__svg {
+    fill: #ffd74b;
+}
+
+.link-contact__svg--phone {
+    width: 16px;
+    height: 15px;
+  
+    @media (min-width: $tablet-width) {
+      width: 24px;
+      height: 23px;
+    }
+  
+    @media (min-width: @desktop-width) {
+      width: 36px;
+      height: 34px;
+    }
+}
+  

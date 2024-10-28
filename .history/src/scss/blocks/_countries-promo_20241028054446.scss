@@ -1,0 +1,122 @@
+.countries-promo {
+    background-color: #edeff6;
+    margin-top: -30px;
+    padding-top: 101px;
+    padding-bottom: 34px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    z-index: 5;
+  
+    @media (min-width: $tablet-width) {
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      margin-top: -60px;
+      padding-top: 133px;
+      padding-bottom: 80px;
+      background-image: url("../img/bg-countries-promo-tablet.png");
+      background-size: contain;
+      background-position: center 140px;
+      background-repeat: no-repeat;
+  
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-countries-promo-tablet@2x.png");
+      }
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-top: 222px;
+      padding-bottom: 140px;
+      background-image: url("../img/bg-countries-promo-desktop.png");
+      background-size: contain;
+      background-position: center 148px;
+  
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-countries-promo-desktop@2x.png");
+      }
+    }
+}
+
+.countries-promo__grid {
+    display: grid;
+  
+    @media (min-width: $tablet-width) {
+      padding: 0 34px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding: 0 70px;
+      grid-template-columns: 560px 1fr;
+      grid-template-rows: repeat(3, auto);
+      column-gap: 172px;
+    }
+}
+
+.countries-promo__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    color: $special-orange;
+    font-size: 24px;
+    line-height: 1;
+  
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+      font-size: 45px;
+      margin-bottom: 57px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      margin-bottom: 64px;
+    }
+}
+
+.countries-promo__text {
+    font-weight: 300;
+    padding-left: 25px;
+    max-width: 200px;
+    margin-top: 0;
+    margin-bottom: 56px;
+  
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+      max-width: 350px;
+      font-size: 28px;
+      line-height: 1.17;
+      margin-bottom: 106px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin-bottom: 0;
+    }
+}
+
+.countries-promo__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    row-gap: 10px;
+  
+    @media (min-width: @desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 1 / -1;
+      position: relative;
+      align-self: start;
+  
+      &::after {
+        content: "";
+        width: 100%;
+        height: 81px;
+        position: absolute;
+        bottom: 0;
+        background-image: url("../img/fade.png");
+        background-size: cover;
+        background-position: center bottom;
+      }
+    }
+  }

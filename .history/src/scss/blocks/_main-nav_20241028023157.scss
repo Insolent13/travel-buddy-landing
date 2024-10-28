@@ -1,0 +1,12 @@
+.main-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 145px;
+}
+
+.main-nav__item:not(:last-child) {
+    margin-right: 37px;
+  }
