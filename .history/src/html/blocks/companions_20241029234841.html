@@ -1,0 +1,599 @@
+<section class="companions">
+    <div class="container">
+        <div class="companions__grid">
+            <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">Каталог попутчиков</h2>
+            
+            <aside class="companions__filter companions-filter">
+                <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
+                
+                <form class="companions-filter__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <fieldset class="companions-filter__fieldset companions-filter__fieldset--checkbox">
+                        <div class="companions-filter__legend">Хобби</div>
+                        <div class="companions-filter__wrap">
+                            <label class="companions-filter__field checkbox-filter">
+                                <input class="checkbox-filter__input" type="checkbox" name="gym" checked>
+                                <span class="checkbox-filter__box"></span>
+                                <span class="checkbox-filter__text">Спортзал</span>
+                            </label>
+                            <label class="companions-filter__field checkbox-filter">
+                                <input class="checkbox-filter__input" type="checkbox" name="hookah">
+                                <span class="checkbox-filter__box"></span>
+                                <span class="checkbox-filter__text">Кальян</span>
+                            </label>
+                            <label class="companions-filter__field checkbox-filter">
+                                <input class="checkbox-filter__input" type="checkbox" name="sofa">
+                                <span class="checkbox-filter__box"></span>
+                                <span class="checkbox-filter__text">Диван</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="companions-filter__fieldset companions-filter__fieldset--checkbox">
+                        <div class="companions-filter__legend">Музыка</div>
+                        <div class="companions-filter__wrap">
+                            <label class="companions-filter__field checkbox-filter">
+                                <input class="checkbox-filter__input" type="checkbox" name="hard-rock" checked>
+                                <span class="checkbox-filter__box"></span>
+                                <span class="checkbox-filter__text">Тяжелый рок</span>
+                            </label>
+                            <label class="companions-filter__field checkbox-filter">
+                                <input class="checkbox-filter__input" type="checkbox" name="russian-rap">
+                                <span class="checkbox-filter__box"></span>
+                                <span class="checkbox-filter__text">Русский рэп</span>
+                            </label>
+                            <label class="companions-filter__field checkbox-filter">
+                                <input class="checkbox-filter__input" type="checkbox" name="eurodance">
+                                <span class="checkbox-filter__box"></span>
+                                <span class="checkbox-filter__text">Евроденс</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="companions-filter__fieldset companions-filter__fieldset--checkbox">
+                        <div class="companions-filter__legend">Еда</div>
+                        <div class="companions-filter__wrap">
+                            <label class="companions-filter__field checkbox-filter">
+                                <input class="checkbox-filter__input" type="checkbox" name="meat-eater" checked>
+                                <span class="checkbox-filter__box"></span>
+                                <span class="checkbox-filter__text">Мясоед</span>
+                            </label>
+                            <label class="companions-filter__field checkbox-filter">
+                                <input class="checkbox-filter__input" type="checkbox" name="pp">
+                                <span class="checkbox-filter__box"></span>
+                                <span class="checkbox-filter__text">Сидит на ПП</span>
+                            </label>
+                            <label class="companions-filter__field checkbox-filter">
+                                <input class="checkbox-filter__input" type="checkbox" name="vegan-raw">
+                                <span class="checkbox-filter__box"></span>
+                                <span class="checkbox-filter__text">Веган-сыроед</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="companions-filter__fieldset companions-filter__fieldset--icon">
+                        <div class="companions-filter__legend">Транспорт</div>
+                        
+                        <div class="companions-filter__wrap">
+                            <label class="companions-filter__field checkbox-icon">
+                                <input class="checkbox-icon__input" type="checkbox" name="plane">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon--plane" aria-label="Транспорт попутчика" focusable="false">
+                                    <use href="./img/svsprite/sprite.symbol.svg#plane"></use>
+                                </svg>
+                            </label>
+                            
+                            <label class="companions-filter__field checkbox-icon">
+                                <input class="checkbox-icon__input" type="checkbox" name="bus">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon--bus" aria-label="Транспорт попутчика" focusable="false">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#bus"></use>
+                                </svg>
+                            </label>
+                            
+                            <label class="companions-filter__field checkbox-icon">
+                                <input class="checkbox-icon__input" type="checkbox" name="bicycle">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon--bicycle" aria-label="Транспорт попутчика" focusable="false">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#bicycle"></use>
+                                </svg>
+                            </label>
+                            
+                            <label class="companions-filter__field checkbox-icon">
+                                <input class="checkbox-icon__input" type="checkbox" name="run">
+                                <svg class="checkbox-icon__icon checkbox-icon__icon--run" aria-label="Транспорт попутчика" focusable="false">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#run"></use>
+                                </svg>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="companions-filter__fieldset companions-filter__fieldset--range">
+                        <div class="companions-filter__legend">Левел</div>
+                        <div class="companions-filter__wrap">
+                            <div class="companions-filter__input-double input-double">
+                                <input class="input-double__input input-double__input--min" type="number" name="level-min" value="30">
+                                <input class="input-double__input input-double__input--max" type="number" name="level-max" value="100">
+                            </div>
+                            <div class="companions-filter__range range-slider">
+                                <div class="range-slider__track"></div>
+                                <input class="range-slider__input" name="range-level-min" type="range" min="0" max="100" value="30">
+                                <input class="range-slider__input" name="range-level-max" type="range" min="0" max="100" value="100">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="companions-filter__footer">
+                        <button class="companions-filter__submit button" type="submit">Показать</button>
+                    </div>
+                </form>
+            </aside>
+
+            <div class="companions__wrap">
+                <ul class="companions__list">
+                    <li class="companions__item">
+                        <div class="companion-card">
+                            
+                            <a class="companion-card__avatar" href="firsova.html">
+                                <picture class="companion-card__picture">
+                                    <source media="(min-width: 1366px)" srcset="img/ava-firsova-285.jpg 1x, img/ava-firsova-285@2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/ava-firsova-190.jpg 1x, img/ava-firsova-190@2x.jpg 2x">
+                                    <img class="companion-card__img" src="img/ava-firsova.jpg" srcset="img/ava-firsova-100.jpg 1x, img/ava-firsova-100@2x.jpg 2x" alt="Таня Фирсова">
+                                </picture>
+                            </a>
+                            
+                            <h3 class="companion-card__name">
+                                <a class="companion-card__link" href="firsova.html">
+                                    Таня <span class="companion-card__surname">Фирсова</span>
+                                </a>
+                            </h3>
+
+                            <div class="companion-card__like">
+                                <div class="companion-like companion-like--active">
+                                    <button class="companion-like__button button" type="button">
+                                        <span class="visually-hidden" aria-hidden="true" tabindex="-1">Лайк</span>
+                                    </button>
+                                    <span class="companion-like__count">1,5 М</span>
+                                </div>
+                            </div>
+
+                            <p class="companion-card__tag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+
+                            <div class="companion-card__countries">
+                                <div class="companion-countries">
+                                    <h4 class="companion-countries__title">Хочет посетить:</h4>
+                                    <ul class="companion-countries__list">
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-srilanka.png" srcset="img/flag-srilanka.png 1x, img/flag-srilanka@2x.png 2x" width="26" height="18" alt="Шри-Ланка">
+                                            Шри-Ланка
+                                        </li>
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-thailand.png" srcset="img/flag-thailand.png 1x, img/flag-thailand@2x.png 2x" width="26" height="18" alt="Таиланд">
+                                            Таиланд
+                                        </li>
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-seychelles.png" srcset="img/flag-seychelles.png 1x, img/flag-seychelles@2x.png 2x" width="26" height="18" alt="Сейшелы">
+                                            Сейшелы
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="companion-card__transport">
+                                <div class="companion-transport">
+                                    <h4 class="companion-transport__title">Транспорт:</h4>
+                                    <div class="companion-transport__list">
+                                        <ul class="transport-card">
+                                            <li class="transport-card__item transport-card__item--active tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--plane">
+                                                    <use href="./img/svgsprite/sprite.symbol.svg#plane"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Авиаперелет</div>
+                                            </li>
+                                            <li class="transport-card__item tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--bus">
+                                                    <use href="./img/svgsprite/sprite.symbol.svg#bus"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Автотранспорт</div>
+                                            </li>
+                                            <li class="transport-card__item tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--bicycle">
+                                                    <use xlink:href="img/sprite.svg#bicycle"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Велосипед</div>
+                                            </li>
+                                            <li class="transport-card__item tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--run">
+                                                    <use href=".img/svgsprite/sprite.symbol.svg#run"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Пешком</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="companion-card__level">
+                                <div class="companion-level">
+                                    <h4 class="companion-level__title">Левел:</h4>
+                                    <div class="companion-level__label companion-level__label--small">
+                                        <div class="level-label level-label--small">
+                                            <b class="level-label__count">95</b>
+                                            <p class="level-label__text">level</p>
+                                            <svg class="level-label__svg" width="45" height="45" aria-label="Уровень попутчика" focusable="false">
+                                                <circle class="level-label__circle" cx="22.5" cy="22.5" r="21" stroke-dasharray="calc(21 * 2 * 3.14)" stroke-dashoffset="calc(132 - (132 * 95) / 100)">
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="companion-level__label companion-level__label--large">
+                                        <div class="level-label">
+                                            <b class="level-label__count">95</b>
+                                            <p class="level-label__text">level</p>
+                                            <svg class="level-label__svg" width="60" height="60" aria-label="Уровень попутчика" focusable="false">
+                                                <circle class="level-label__circle" cx="30" cy="30" r="28.5" stroke-dasharray="calc(28.5 * 2 * 3.14)" stroke-dashoffset="calc(179 - (179 * 95) / 100)">
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="companion-card__button button button--round button--yellow" href="response.html">Позвать!</a>
+                        </div>
+                    </li>
+                    <li class="companions__item">
+                        <div class="companion-card">
+                            
+                            <a class="companion-card__avatar" href="demin.html">
+                                <picture class="companion-card__picture">
+                                    <source media="(min-width: 1366px)" srcset="img/ava-demin-285.jpg 1x, img/ava-demin-285@2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/ava-demin-190.jpg img/ava-demin-190@2x.jpg">
+                                    <img class="companion-card__img" src="img/ava-demin.jpg" srcset="img/ava-demin-100.jpg 1x, img/ava-demin-100@2x.jpg 2x" alt="Петя Демин">
+                                </picture>
+                            </a>
+
+
+                            <h3 class="companion-card__name">
+                                <a class="companion-card__link" href="demin.html">
+                                    Петя <span class="companion-card__surname">Демин</span>
+                                </a>
+                            </h3>
+
+                            <div class="companion-card__like">
+                                <div class="companion-like">
+                                    <button class="companion-like__button button" type="button">
+                                        <span class="visually-hidden" aria-hidden="true" tabindex="-1">Лайк</span>
+                                    </button>
+                                    <span class="companion-like__count">1500</span>
+                                </div>
+                            </div>
+
+                            <p class="companion-card__tag">#бургер #бар #футбол #концерт #крафт</p>
+                        
+                            <div class="companion-card__countries">
+                                <div class="companion-countries">
+                                    <h4 class="companion-countries__title">Хочет посетить:</h4>
+                                    <ul class="companion-countries__list">
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-belgium.png" srcset="img/flag-belgium.png 1x, img/flag-belgium@2x.png 2x" width="26" height="18" alt="Бельгия">
+                                            Бельгия
+                                        </li>
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-czechia.png" srcset="img/flag-czechia.png 1x, img/flag-czechia@2x.png 2x" width="26" height="18" alt="Чехия">
+                                            Чехия
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="companion-card__transport">
+                                <div class="companion-transport">
+                                    <h4 class="companion-transport__title">Транспорт:</h4>
+                                    <div class="companion-transport__list">
+                                        <ul class="transport-card">
+                                            <li class="transport-card__item transport-card__item--active tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--plane" aria-label="Транспорт попутчика" focusable="false">
+                                                    <use href="./img/svgsprite/sprite.svg#plane"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Авиаперелет</div>
+                                            </li>
+                                            <li class="transport-card__item transport-card__item--active tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--bus" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#bus"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Автотранспорт</div>
+                                            </li>
+                                            <li class="transport-card__item tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--bicycle" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#bicycle"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Велосипед</div>
+                                            </li>
+                                            <li class="transport-card__item transport-card__item--active tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--run" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#run"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Пешком</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="companion-card__level">
+                                <div class="companion-level">
+                                    <h4 class="companion-level__title">Левел:</h4>
+                                    <div class="companion-level__label companion-level__label--small">
+                                        <div class="level-label level-label--small">
+                                            <b class="level-label__count">80</b>
+                                            <p class="level-label__text">level</p>
+                                            <svg class="level-label__svg" width="45" height="45" aria-label="Уровень попутчика." focusable="false">
+                                                <circle class="level-label__circle" cx="22.5" cy="22.5" r="21" stroke-dasharray="calc(21 * 2 * 3.14)" stroke-dashoffset="calc(132 - (132 * 80) / 100)">  
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="companion-level__label companion-level__label--large">
+                                        <div class="level-label">
+                                            <b class="level-label__count">80</b>
+                                            <p class="level-label__text">level</p>
+                                            <svg class="level-label__svg" width="60" height="60" aria-label="Уорвень попутчика." focusable="false">
+                                                <circle class="level-label__circle" cx="30" cy="30" r="28.5" stroke-dasharray="calc(28.5 * 2 * 3.14)" stroke-dashoffset="calc(179 - (179 * 80) / 100)">
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="companion-card__button button button--round button--yellow" href="response.html">Позвать!</a>
+                        </div>
+                    </li>
+                    <li class="companions__item">
+                        <div class="companion-card">
+                            
+                            <a class="companion-card__avatar" href="smolov.html">
+                                <picture class="companion-card__picture">
+                                    <source media="(min-width: 1366px)" srcset="img/ava-smolov-285.jpg 1x, img/ava-smolov-285@2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/ava-smolov-190.jpg img/ava-smolov-190@2x.jpg">
+                                    <img class="companion-card__img" src="img/ava-smolov.jpg" srcset="img/ava-smolov-100.jpg 1x, img/ava-smolov-100@2x.jpg 2x" alt="Марк Смолов.">
+                                </picture>
+                            </a>
+
+                            <h3 class="companion-card__name">
+                                <a class="companion-card__link" href="smolov.html">
+                                    Марк <span class="companion-card__surname">Смолов</span>
+                                </a>
+                            </h3>
+
+                            <div class="companion-card__like">
+                                <div class="companion-like">
+                                    <button class="companion-like__button button" type="button">
+                                        <span class="visually-hidden" aria-hidden="true" tabindex="-1">Лайк</span>
+                                    </button>
+                                    <span class="companion-like__count">170</span>
+                                </div>
+                            </div>
+
+                            <p class="companion-card__tag">#рэп #тату #хайпбист #кроссовки #суприм</p>
+
+                            <div class="companion-card__countries">
+                                <div class="companion-countries">
+                                    <h4 class="companion-countries__title">Хочет посетить:</h4>
+                                    <ul class="companion-countries__list">
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-usa.png" srcset="img/flag-usa.png 1x, img/flag-usa@2x.png 2x" width="26" height="18" alt="США.">
+                                            США
+                                        </li>
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-australia.png" srcset="img/flag-australia.png 1x, img/flag-australia@2x.png 2x" width="26" height="18" alt="Австралия.">
+                                            Австралия
+                                        </li>
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-dominica.png" srcset="img/flag-dominica.png 1x, img/flag-dominica@2x.png 2x" width="26" height="18" alt="Доминика.">
+                                            Доминика
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="companion-card__transport">
+                                <div class="companion-transport">
+                                    <h4 class="companion-transport__title">Транспорт:</h4>
+                                    <div class="companion-transport__list">
+                                        <ul class="transport-card">
+                                            <li class="transport-card__item transport-card__item--active tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--plane" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#plane"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Авиаперелет</div>
+                                            </li>
+                                            <li class="transport-card__item tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--bus" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#bus"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Автотранспорт</div>
+                                            </li>
+                                            <li class="transport-card__item transport-card__item--active tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--bicycle" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#bicycle"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Велосипед</div>
+                                            </li>
+                                            <li class="transport-card__item tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--run" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#run"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Пешком</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="companion-card__level">
+                                <div class="companion-level">
+                                    <h4 class="companion-level__title">Левел:</h4>
+                                    <div class="companion-level__label companion-level__label--small">
+                                        <div class="level-label level-label--small">
+                                            <b class="level-label__count">25</b>
+                                            <p class="level-label__text">level</p>
+                                            <svg class="level-label__svg" width="45" height="45" aria-label="Уровень попутчика." focusable="false">
+                                                <circle class="level-label__circle" cx="22.5" cy="22.5" r="21" stroke-dasharray="calc(21 * 2 * 3.14)" stroke-dashoffset="calc(132 - (132 * 25) / 100)">
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="companion-level__label companion-level__label--large">
+                                        <div class="level-label">
+                                            <b class="level-label__count">25</b>
+                                            <p class="level-label__text">level</p>
+                                            <svg class="level-label__svg" width="60" height="60" aria-label="Уровень попутчика." focusable="false">
+                                                <circle class="level-label__circle" cx="30" cy="30" r="28.5" stroke-dasharray="calc(28.5 * 2 * 3.14)" stroke-dashoffset="calc(179 - (179 * 25) / 100)">
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="companion-card__button button button--round button--yellow" href="response.html">Позвать!</a>
+                        </div>
+                    </li>
+                    <li class="companions__item">
+                        <div class="companion-card companion-card--online">
+                            
+                            <a class="companion-card__avatar" href="rogova.html">
+                                <picture class="companion-card__picture">
+                                    <source media="(min-width: 1366px)" srcset="img/ava-rogova-285.jpg 1x, img/ava-rogova-285@2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/ava-rogova-190.jpg img/ava-rogova-190@2x.jpg">
+                                    <img class="companion-card__img" src="img/ava-rogova.jpg" srcset="img/ava-rogova-100.jpg 1x, img/ava-rogova-100@2x.jpg 2x" alt="Лариса Роговая.">
+                                </picture>
+                            </a>
+                        
+                            <h3 class="companion-card__name">
+                                <a class="companion-card__link" href="rogova.html">
+                                    Лариса <span class="companion-card__surname">Роговая</span>
+                                </a>
+                            </h3>
+
+                            <div class="companion-card__like">
+                                <div class="companion-like">
+                                    <button class="companion-like__button button" type="button">
+                                        <span class="visually-hidden" aria-hidden="true" tabindex="-1">Лайк</span>
+                                    </button>
+                                    <span class="companion-like__count">23</span>
+                                </div>
+                            </div>
+
+                            <p class="companion-card__tag">#образование #карьера #учеба #линкедин</p>
+
+                            <div class="companion-card__countries">
+                                <div class="companion-countries">
+                                    <h4 class="companion-countries__title">Хочет посетить:</h4>
+                                    <ul class="companion-countries__list">
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-uk.png" srcset="img/flag-uk.png 1x, img/flag-uk@2x.png 2x" width="26" height="18" alt="Великобритания.">
+                                            Великобритания
+                                        </li>
+                                        <li class="companion-countries__item">
+                                            <img class="companion-countries__img" src="img/flag-germany.png" srcset="img/flag-germany.png 1x, img/flag-germany@2x.png 2x" width="26" height="18" alt="Германия.">
+                                            Германия
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="companion-card__transport">
+                                <div class="companion-transport">
+                                    <h4 class="companion-transport__title">Транспорт:</h4>
+                                    <div class="companion-transport__list">
+                                        <ul class="transport-card">
+                                            <li class="transport-card__item transport-card__item--active tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--plane" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#plane"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Авиаперелет</div>
+                                            </li>
+                                            <li class="transport-card__item transport-card__item--active tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--bus" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#bus"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Автотранспорт</div>
+                                            </li>
+                                            <li class="transport-card__item tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--bicycle" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#bicycle"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Велосипед</div>
+                                            </li>
+                                            <li class="transport-card__item tooltip">
+                                                <svg class="transport-card__icon transport-card__icon--run" aria-label="Транспорт попутчика." focusable="false">
+                                                    <use xlink:href="img/sprite.svg#run"></use>
+                                                </svg>
+                                                <div class="tooltip__text">Пешком</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="companion-card__level">
+                                <div class="companion-level">
+                                    <h4 class="companion-level__title">Левел:</h4>
+                                    <div class="companion-level__label companion-level__label--small">
+                                        <div class="level-label level-label--small">
+                                            <b class="level-label__count">50</b>
+                                            <p class="level-label__text">level</p>
+                                            <svg class="level-label__svg" width="45" height="45" aria-label="Уровень попутчика." focusable="false">
+                                                <circle class="level-label__circle" cx="22.5" cy="22.5" r="21" stroke-dasharray="calc(21 * 2 * 3.14)" stroke-dashoffset="calc(132 - (132 * 50) / 100)">
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="companion-level__label companion-level__label--large">
+                                        <div class="level-label">
+                                            <b class="level-label__count">50</b>
+                                            <p class="level-label__text">level</p>
+                                            <svg class="level-label__svg" width="60" height="60" aria-label="Уровень попутчика." focusable="false">
+                                                <circle class="level-label__circle" cx="30" cy="30" r="28.5" stroke-dasharray="calc(28.5 * 2 * 3.14)" stroke-dashoffset="calc(179 - (179 * 50) / 100)">
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="companion-card__button button button--round button--yellow" href="response.html">Позвать!</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="companions__show-more button" href="#">Показать еще</a>
+
+                <div class="companions__footer">
+                    <div class="companions__pagination">
+                        <ul class="pagination">
+                            <li class="pagination__item">
+                                <a class="pagination__link pagination__link--active" href="#">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="#">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="#">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a class="pagination__link" href="#">4</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="companions__pagination-arrow">
+                        <div class="pagination-arrow">
+                            <a class="pagination-arrow__link pagination-arrow__link--prev" href="#">
+                                <span class="visually-hidden" aria-hidden="true" tabindex="-1">Предыдущий</span>
+                            </a>
+                            <a class="pagination-arrow__link pagination-arrow__link--next" href="#">
+                                <span class="visually-hidden" aria-hidden="true" tabindex="-1">Следующий</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
