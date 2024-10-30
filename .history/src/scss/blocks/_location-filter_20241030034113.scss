@@ -1,0 +1,55 @@
+.location-filter {
+    background-color: #e2e5f2;
+    margin-top: -30px;
+    padding-top: 52px;
+    padding-bottom: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    min-width: 100%;
+  
+    @media (min-width: @tablet-width) {
+      margin-top: -60px;
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      padding-top: 123px;
+      padding-bottom: 55px;
+    }
+  
+    @media (min-width: @desktop-width) {
+      background-color: #edeff6;
+      padding-top: 118px;
+      padding-bottom: 74px;
+    }
+  
+    &--open {
+      position: absolute;
+      z-index: 9;
+  
+      .location-filter__lands,
+      .location-filter__letters,
+      .location-filter__countrys,
+      .location-filter__close {
+        display: block;
+      }
+  
+      @media (min-width: @tablet-width) {
+        .location-filter__grid {
+          grid-template-columns: 1fr 176px;
+        }
+      }
+  
+      @media (min-width: desktop-width) {
+        position: static;
+        padding-top: 118px;
+        padding-bottom: 150px;
+  
+        .location-filter__countrys {
+          display: none;
+        }
+  
+        .location-filter__grid {
+          grid-template-columns: auto 1fr;
+        }
+      }
+    }
+}

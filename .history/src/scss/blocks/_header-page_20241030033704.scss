@@ -1,0 +1,117 @@
+.header-page {
+    background-color: #182044;
+    color: #ffffff;
+    margin-top: -73px;
+    padding-top: 95px;
+    padding-bottom: 12px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    z-index: 10;
+  
+    @media (min-width: $tablet-width) {
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+      margin-top: -132px;
+      padding-top: 224px;
+      padding-bottom: 66px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-top: -120px;
+      padding-top: 225px;
+      padding-bottom: 68px;
+    }
+  
+    &--profile {
+      @media (min-width: $desktop-width) {
+        padding-top: 163px;
+      }
+    }
+}
+
+.header-page__grid {
+    @media (min-width: $tablet-width) {
+      padding-left: 35px;
+      padding-right: 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+}
+
+.header-page__title {
+    margin: 0;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      border-radius: 4px;
+      background-color: #ff8d30;
+  
+      @media (min-width: $tablet-width) {
+        bottom: -68px;
+      }
+  
+      @media (min-width: $desktop-width) {
+        bottom: -70px;
+      }
+    }
+  
+    @media (min-width: $tablet-width) {
+      font-size: 60px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      align-self: flex-end;
+    }
+}
+
+.header-page__link-index {
+    display: none;
+  
+    @media (min-width: tablet-width) {
+      display: block;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding-right: 60px;
+      position: relative;
+      transition: opacity 0.2s ease-in-out;
+  
+      &::after {
+        content: "";
+        width: 32px;
+        height: 16px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='16' viewBox='0 0 32 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 16h24a4 4 0 0 0 4-4V7a4 4 0 0 0-4-4H4v2h24a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H4v2Z' fill='%23fff'/%3E%3Cpath d='M0 4 9 .536v6.928L0 4Z' fill='%23fff'/%3E%3C/svg%3E");
+      }
+  
+      &:hover {
+        opacity: 0.6;
+      }
+  
+      &:active {
+        opacity: 0.3;
+      }
+    }
+}
