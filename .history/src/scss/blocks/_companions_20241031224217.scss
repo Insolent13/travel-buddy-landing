@@ -1,0 +1,35 @@
+.companions {
+    padding-top: 20px;
+    padding-bottom: 76px;
+  
+    @media (min-width: $tablet-width) {
+      padding-top: 43px;
+      padding-bottom: 122px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+      padding-bottom: 140px;
+    }
+}
+
+.companions__grid {
+    display: grid;
+    row-gap: 22px;
+  
+    @media (min-width: $tablet-width) {
+      row-gap: 40px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 285px;
+      column-gap: 86px;
+    }
+}
+
+.companions__filter {
+    @media (min-width: $desktop-width) {
+      align-self: start;
+      grid-column: 2 / 3;
+    }
+}[]

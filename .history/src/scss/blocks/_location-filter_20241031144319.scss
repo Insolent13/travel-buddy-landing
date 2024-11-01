@@ -1,0 +1,114 @@
+.location-filter {
+  background-color: #e2e5f2;
+  margin-top: -30px;
+  padding-top: 52px;
+  padding-bottom: 15px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  min-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    padding-top: 123px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #edeff6;
+    padding-top: 118px;
+    padding-bottom: 74px;
+  }
+
+  &--open {
+    position: absolute;
+    z-index: 9;
+
+    .location-filter__lands,
+    .location-filter__letters,
+    .location-filter__countries,
+    .location-filter__close {
+      display: block;
+    }
+
+    @media (min-width: $tablet-width) {
+      .location-filter__grid {
+        grid-template-columns: 1fr 176px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      position: static;
+      padding-top: 118px;
+      padding-bottom: 150px;
+
+      .location-filter__countries {
+        display: none;
+      }
+
+      .location-filter__grid {
+        grid-template-columns: auto 1fr;
+      }
+    }
+  }
+}
+
+.location-filter__grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(5, auto);
+
+  @media (min-width: $tablet-width) {
+    padding: 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 1fr;
+    padding: 0;
+  }
+}
+
+.location-filter__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #192144;
+  padding-left: 28px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: center;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    padding-left: 45px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 30px;
+  }
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='15' viewBox='0 0 23 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23192144' d='M11 0h12v3H11zM11 12h12v3H11zM0 6h12v3H0zM6 0h3v3H6zM6 12h3v3H6zM14 6h3v3h-3zM0 0h4v3H0zM0 12h4v3H0zM19 6h4v3h-4z'/%3E%3C/svg%3E");
+    background-size: 16px auto;
+
+    @media (min-width: desktop-width) {
+      width: 23px;
+      height: 15px;
+      background-size: 23px 15px;
+    }
+  }
+}

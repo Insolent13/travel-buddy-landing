@@ -1,0 +1,38 @@
+.checkbox-filter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+    &:hover {
+      .checkbox-filter__box {
+        background-color: #f8f9fb;
+      }
+  
+      .checkbox-filter__text {
+        color: #5f6062;
+      }
+    }
+}
+
+.checkbox-filter__input {
+    position: absolute;
+    appearance: none;
+    outline: none;
+}
+
+.checkbox-filter__box {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  
+    @media (min-width: @tablet-width) {
+      width: 24px;
+      height: 24px;
+    }
+  }

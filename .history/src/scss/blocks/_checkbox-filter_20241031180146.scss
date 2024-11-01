@@ -1,0 +1,22 @@
+.checkbox-filter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+    &:hover {
+      .checkbox-filter__box {
+        background-color: #f8f9fb;
+      }
+  
+      .checkbox-filter__text {
+        color: #5f6062;
+      }
+    }
+}
+
+.checkbox-filter__input {
+    position: absolute;
+    appearance: none;
+    outline: none;
+  }

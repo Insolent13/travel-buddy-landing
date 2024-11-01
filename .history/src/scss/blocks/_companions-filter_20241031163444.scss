@@ -1,0 +1,13 @@
+.companions-filter {
+    background-color: #ffd74b;
+    border-radius: 20px;
+    padding: 28px 25px;
+  
+    @media (min-width: $tablet-width) {
+      padding: 37px 35px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding: 45px 48px;
+    }
+}

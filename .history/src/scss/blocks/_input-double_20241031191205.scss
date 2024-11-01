@@ -1,0 +1,38 @@
+.input-double {
+    display: flex;
+    height: 34px;
+    box-sizing: border-box;
+    position: relative;
+  
+    @media (min-width: @tablet-width) {
+      height: 46px;
+    }
+  
+    &::before {
+      content: "";
+      width: 20px;
+      height: 11px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+  
+    &::after {
+      content: "";
+      width: 16px;
+      height: 1px;
+      background-color: #cbced9;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+  
+      @media (min-width: $tablet-width) {
+        width: 20px;
+      }
+    }
+}

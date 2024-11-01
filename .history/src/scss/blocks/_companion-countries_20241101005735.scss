@@ -1,0 +1,42 @@
+.companion-countries {
+    position: relative;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 25px 25px 0 25px;
+    border-top: 1px solid #edeff6;
+  
+    @media (min-width: $tablet-width) {
+      margin-left: -35px;
+      margin-right: -25px;
+      padding: 29px 37px 0 37px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+}
+
+.companion-countries__title {
+    font-size: 15px;
+    font-weight: 400;
+    color: #444444;
+    text-transform: lowercase;
+    margin: 0;
+    width: 116px;
+    text-align: center;
+    background-color: #ffffff;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+  
+    @media (min-width: $tablet-width) {
+      left: 74px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+}
+

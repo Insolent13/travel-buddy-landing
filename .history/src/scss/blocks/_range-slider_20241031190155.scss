@@ -1,0 +1,18 @@
+.range-slider {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+
+.range-slider__track {
+    height: 2px;
+    background-color: #1d2e5b;
+    opacity: 0.2;
+  
+  
+    @media (min-width: $tablet-width) {
+      height: 3px;
+      border-radius: 2px;
+    }
+}
+

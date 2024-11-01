@@ -1,0 +1,20 @@
+.companion-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 15px 20px 23px 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    transition: box-shadow 0.2s ease-in-out;
+  
+    @media (min-width: @tablet-width) {
+      padding: 35px 25px 25px 35px;
+      grid-template-columns: auto min-content auto minmax(93px, 1fr) auto;
+      grid-template-rows: auto 1fr auto auto;
+    }
+  
+    @media (min-width: 4desktop-width) {
+      padding: 46px 43px 42px 0;
+      grid-template-columns: repeat(3, auto) minmax(80px, 1fr) auto auto;
+      grid-template-rows: minmax(30px, auto) auto minmax(36px, 1fr) auto;
+    }
+}

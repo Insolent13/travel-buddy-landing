@@ -1,0 +1,12 @@
+.pagination {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.pagination__item {
+    &:not(:last-child) {
+      margin-right: 1px;
+    }
+  }

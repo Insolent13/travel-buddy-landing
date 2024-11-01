@@ -1,0 +1,28 @@
+.location-filter-lands {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.location-filter-lands__item {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 28px;
+    }
+  }
+
+  @media (min-width: desktop-width) {
+    &:not(:last-child) {
+      margin-right: 33px;
+    }
+  }
+}
