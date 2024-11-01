@@ -1,0 +1,75 @@
+<section class="profile-info">
+    <div class="container">
+        <div class="profile-info__grid">
+            <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">Персональная информация</h2>
+            
+            <div class="profile-info__level profile-info__level--large">
+                <div class="level-label level-label--large">
+                    <b class="level-label__count">80</b>
+                    <p class="level-label__text">level</p>
+                    <svg class="level-label__svg" width="100" height="100" aria-label="Рейтинг попутчика." focusable="false">
+                        <circle class="level-label__circle" r="48.5" cx="50" cy="50" stroke-dasharray="calc(48.5 * 2 * 3.14)" stroke-dashoffset="calc(305 - (305 * 80) / 100)"></circle>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="profile-info__level profile-info__level--medium">
+                <div class="level-label level-label--medium">
+                    <b class="level-label__count">80</b>
+                    <p class="level-label__text">level</p>
+                    <svg class="level-label__svg" width="95" height="95" aria-label="Рейтинг попутчика." focusable="false">
+                        <circle class="level-label__circle" r="46" cx="47.5" cy="47.5" stroke-dasharray="calc(46 * 2 * 3.14)" stroke-dashoffset="calc(289 - (289 * 80) / 100)"></circle>
+                    </svg>
+                </div>
+            </div>
+            
+            <img class="profile-info__avatar" src="img/ava-demin-100.jpg" srcset="img/ava-demin-100.jpg 1x, img/ava-demin-100@2x.jpg 2x" width="100" height="100" alt="Петя Демин.">
+            
+            <button class="profile-info__button-avatar button button--blue" type="button">Сменить фото</button>
+            
+            <div class="profile-info__tag">
+                <div class="profile-tag">
+                    <h3 class="profile-tag__title">Тэги</h3>
+                    <textarea class="profile-tag__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+                </div>
+            </div>
+            
+            <div class="profile-info__transport profile-transport-box">
+                <div class="profile-transport">
+                    <h3 class="profile-transport__title">Транспорт</h3>
+                    
+                    <ul class="profile-transport__list">
+                        <li class="profile-transport__item">
+                            <button class="profile-transport__button profile-transport__button--active">
+                                <svg class="profile-transport__button-icon profile-transport__button-icon--plane" aria-label="Транспорт самолет." focusable="false">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#plane"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="profile-transport__item">
+                            <button class="profile-transport__button profile-transport__button--active">
+                                <svg class="profile-transport__button-icon profile-transport__button-icon--bus" aria-label="Транспорт автобус." focusable="false">
+                                    <use href="./img/svgsprite/sprite.symbol.svg#bus"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="profile-transport__item">
+                            <button class="profile-transport__button">
+                                <svg class="profile-transport__button-icon profile-transport__button-icon--bicycle" aria-label="Транспорт велосипед." focusable="false">
+                                    <use xlink:href="img/sprite.svg#bicycle"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="profile-transport__item">
+                            <button class="profile-transport__button profile-transport__button--active">
+                                <svg class="profile-transport__button-icon profile-transport__button-icon--run" aria-label="Транспорт пешком." focusable="false">
+                                    <use xlink:href="img/sprite.svg#run"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

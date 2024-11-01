@@ -1,0 +1,504 @@
+<section class="profile-add-plan">
+    <div class="container">
+        <div class="profile-add-plan__grid">
+            <h2 class="profile-add-plan__title">Добавить план:</h2>
+            
+            <div class="profile-add-plan__dotnav">
+                <ul class="profile-add-plan-dotnav">
+                    <li class="profile-add-plan-dotnav__item profile-add-plan-dotnav__item--active">
+                        <span class="visually-hidden" aria-hidden="true" tabindex="-1">Даты</span>
+                    </li>
+                    <li class="profile-add-plan-dotnav__item">
+                        <span class="visually-hidden" aria-hidden="true" tabindex="-1">Маршрут</span>
+                    </li>
+                    <li class="profile-add-plan-dotnav__item">
+                        <span class="visually-hidden" aria-hidden="true" tabindex="-1">Развлечения</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <form class="profile-add-plan__steps" action="https://echo.htmlacademy.ru/" method="post">
+                <fieldset class="add-plan-step add-plan-step--first" id="profile-add-plan-step-1">
+                    <div class="add-plan-step__header">
+                        <legend class="add-plan-step__legend">
+                            <span class="add-plan-step__number">Шаг 1. </span>
+                            Даты пребывания
+                        </legend>
+                        <p class="add-plan-step__text">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели&nbsp;бы позвать в&nbsp;поездку, и&nbsp;ее&nbsp;предполагаемую длительность.</p>
+                        
+                        <div class="add-plan-step__breadcrumb">
+                            <ul class="add-plan-step-breadcrumb">
+                                <li class="add-plan-step-breadcrumb__item add-plan-step-breadcrumb__item--active">
+                                    Даты
+                                </li>
+                                <li class="add-plan-step-breadcrumb__item">
+                                    Маршрут
+                                </li>
+                                <li class="add-plan-step-breadcrumb__item">
+                                    Развлечения
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <label class="add-plan-step__field add-plan-step__field--companion field-number">
+                        <span class="field-number__label">Ищу попутчиков:</span>
+                        <span class="field-number__unit">чел.</span>
+                        
+                        <div class="field-number__control input-number">
+                            <button class="input-number__btn button" type="button" aria-label="Убрать попутчика.">
+                                <svg class="input-number__icon input-number__icon--minus">
+                                    <use xlink:href="img/sprite.svg#minus"></use>
+                                </svg>
+                            </button>
+                            <input class="input-number__input" type="number" name="quantity-companions" value="2">
+                            <button class="input-number__btn button" type="button" aria-label="Добавить попутчика.">
+                                <svg class="input-number__icon input-number__icon--plus">
+                                    <use xlink:href="img/sprite.svg#plus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </label>
+                    
+                    <label class="add-plan-step__field add-plan-step__field--day field-number">
+                        <span class="field-number__label">Длительность:</span>
+                        <span class="field-number__unit">дн.</span>
+                        
+                        <div class="field-number__control input-number">
+                            <button class="input-number__btn button" type="button">
+                                <svg class="input-number__icon input-number__icon--minus" aria-label="Убрать день.">
+                                    <use xlink:href="img/sprite.svg#minus"></use>
+                                </svg>
+                            </button>
+                            <input class="input-number__input" type="number" name="quantity-days" value="3">
+                            <button class="input-number__btn button" type="button">
+                                <svg class="input-number__icon input-number__icon--plus" aria-label="Добавить день.">
+                                    <use xlink:href="img/sprite.svg#plus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </label>
+                    
+                    <label class="add-plan-step__field add-plan-step__field--children checkbox">
+                        <input class="checkbox__input" type="checkbox" name="children" checked>
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__text">Можно с детьми</span>
+                    </label>
+                    
+                    <div class="add-plan-step__calendar calendar">
+                        <div class="calendar__header">
+                            <button class="calendar__button calendar__button--prev button" type="button" aria-label="Предыдущий месяц.">
+                                <svg class="calendar__icon">
+                                    <use xlink:href="img/sprite.svg#chevron-left"></use>
+                                </svg>
+                            </button>
+                            <p class="calendar__title">Март 2019</p>
+                            <button class="calendar__nebuttont calendar__button--next button" type="button" aria-label="Следующий месяц.">
+                                <svg class="calendar__icon">
+                                    <use xlink:href="img/sprite.svg#chevron-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <ul class="calendar__week">
+                            <li class="calendar__weekday">
+                                П<span class="calendar__letter">н</span>
+                            </li>
+                            <li class="calendar__weekday">
+                                В<span class="calendar__letter">т</span>
+                            </li>
+                            <li class="calendar__weekday">
+                                С<span class="calendar__letter">р</span>
+                            </li>
+                            <li class="calendar__weekday">
+                                Ч<span class="calendar__letter">т</span>
+                            </li>
+                            <li class="calendar__weekday">
+                                П<span class="calendar__letter">т</span>
+                            </li>
+                            <li class="calendar__weekday calendar__weekday--red">
+                                С<span class="calendar__letter">б</span>
+                            </li>
+                            <li class="calendar__weekday calendar__weekday--red">
+                                В<span class="calendar__letter">с</span>
+                            </li>
+                        </ul>
+                        
+                        <ul class="calendar__days">
+                            <li class="calendar__day calendar__day--disable">23</li>
+                            <li class="calendar__day calendar__day--disable">24</li>
+                            <li class="calendar__day calendar__day--disable">25</li>
+                            <li class="calendar__day calendar__day--disable">26</li>
+                            <li class="calendar__day calendar__day--disable">27</li>
+                            <li class="calendar__day calendar__day--disable">28</li>
+                            <li class="calendar__day calendar__day--disable">
+                                1
+                                <p class="calendar__month">мар</p>
+                            </li>
+                            <li class="calendar__day calendar__day--disable">2</li>
+                            <li class="calendar__day calendar__day--disable">3</li>
+                            <li class="calendar__day calendar__day--disable">4</li>
+                            <li class="calendar__day calendar__day--disable">5</li>
+                            <li class="calendar__day calendar__day--disable">6</li>
+                            <li class="calendar__day calendar__day--disable">7</li>
+                            <li class="calendar__day calendar__day--disable">8</li>
+                            <li class="calendar__day calendar__day--disable">9</li>
+                            <li class="calendar__day calendar__day--disable">10</li>
+                            <li class="calendar__day calendar__day--disable">11</li>
+                            <li class="calendar__day calendar__day--disable">12</li>
+                            <li class="calendar__day calendar__day--disable">13</li>
+                            <li class="calendar__day calendar__day--disable">14</li>
+                            <li class="calendar__day calendar__day--disable">15</li>
+                            <li class="calendar__day calendar__day--disable">16</li>
+                            <li class="calendar__day calendar__day--disable">17</li>
+                            <li class="calendar__day calendar__day--disable">18</li>
+                            <li class="calendar__day calendar__day--disable">19</li>
+                            <li class="calendar__day calendar__day--disable">20</li>
+                            <li class="calendar__day calendar__day--disable">21</li>
+                            <li class="calendar__day calendar__day--disable">22</li>
+                            <li class="calendar__day calendar__day--disable">23</li>
+                            <li class="calendar__day calendar__day--disable">24</li>
+                            <li class="calendar__day calendar__day--disable">25</li>
+                            <li class="calendar__day calendar__day--active">
+                                26
+                                <p class="calendar__desc">Заезд</p>
+                            </li>
+                            <li class="calendar__day calendar__day--active">27</li>
+                            <li class="calendar__day calendar__day--active">
+                                28
+                                <p class="calendar__desc">Выезд</p>
+                            </li>
+                            <li class="calendar__day">29</li>
+                            <li class="calendar__day">30</li>
+                            <li class="calendar__day">31</li>
+                            <li class="calendar__day">
+                                1
+                                <p class="calendar__month">мар</p>
+                            </li>
+                            <li class="calendar__day">2</li>
+                            <li class="calendar__day">3</li>
+                            <li class="calendar__day">4</li>
+                            <li class="calendar__day">5</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="add-plan-step__footer">
+                        <a class="add-plan-step__btn-next button button--yellow" href="#profile-add-plan-step-2">Следующий шаг</a>
+                    </div>
+                </fieldset>
+                
+                <fieldset class="add-plan-step add-plan-step--second" id="profile-add-plan-step-2">
+                    <div class="add-plan-step__header">
+                        <legend class="add-plan-step__legend">
+                            <span class="add-plan-step__number">Шаг 2. </span>
+                            Маршрут
+                        </legend>
+                        <p class="add-plan-step__text">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+                        
+                        <div class="add-plan-step__breadcrumb">
+                            <ul class="add-plan-step-breadcrumb">
+                                <li class="add-plan-step-breadcrumb__item">
+                                    Даты
+                                </li>
+                                <li class="add-plan-step-breadcrumb__item add-plan-step-breadcrumb__item--active">
+                                    Маршрут
+                                </li>
+                                <li class="add-plan-step-breadcrumb__item">
+                                    Развлечения
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="add-plan-step__countries">
+                        <ul class="field-country">
+                            <li class="field-country__item field-country__item--checked">
+                                <!-- field-country__control--open -->
+                                 <div class="field-country__control">
+                                    <button class="field-country__button button" type="button">Босния и Герцеговина</button>
+                                    
+                                    <div class="field-country__options country-options">
+                                        <div class="country-options__grid">
+                                            <ul class="country-options__letters">
+                                                <li class="country-options__letter country-options__letter--active">А</li>
+                                                <li class="country-options__letter">Б</li>
+                                                <li class="country-options__letter">В</li>
+                                                <li class="country-options__letter">Г</li>
+                                                <li class="country-options__letter">Д</li>
+                                                <li class="country-options__letter">Е</li>
+                                                <li class="country-options__letter">З</li>
+                                                <li class="country-options__letter">И</li>
+                                                <li class="country-options__letter">К</li>
+                                                <li class="country-options__letter">Л</li>
+                                                <li class="country-options__letter">М</li>
+                                                <li class="country-options__letter">Н</li>
+                                                <li class="country-options__letter">О</li>
+                                                <li class="country-options__letter">П</li>
+                                                <li class="country-options__letter">Р</li>
+                                                <li class="country-options__letter">С</li>
+                                                <li class="country-options__letter">Т</li>
+                                                <li class="country-options__letter">У</li>
+                                                <li class="country-options__letter">Ф</li>
+                                                <li class="country-options__letter">Х</li>
+                                                <li class="country-options__letter">Ч</li>
+                                                <li class="country-options__letter">Ш</li>
+                                                <li class="country-options__letter">Э</li>
+                                                <li class="country-options__letter">Ю</li>
+                                                <li class="country-options__letter">Я</li>
+                                            </ul>
+                                            <ul class="country-options__countrys">
+                                                <li class="country-options__country">Австралия</li>
+                                                <li class="country-options__country">Австрия</li>
+                                                <li class="country-options__country">Азербайджан</li>
+                                                <li class="country-options__country">Албания</li>
+                                                <li class="country-options__country">Алжир</li>
+                          <li class="country-options__country">Ангола</li>
+                          <li class="country-options__country">Андорра</li>
+                          <li class="country-options__country">Антигуа и Барбуда</li>
+                          <li class="country-options__country">Аргентина</li>
+                          <li class="country-options__country">Армения</li>
+                          <li class="country-options__country">Афганистан</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="field-country__flag">
+                    <img class="field-country__flag-img" src="img/flag-bosnia.png" srcset="img/flag-bosnia.png 1x, img/flag-bosnia@2x.png 2x" width="35" height="24" alt="Босния и Герцеговина.">
+                  </div>
+
+                  <button class="field-country__delete button" type="button">
+                    <span class="visually-hidden" aria-hidden="true" tabindex="-1">Удалить страну</span>
+                  </button>
+                </li>
+
+                <li class="field-country__item field-country__item--checked">
+                  <!-- field-country__control--open -->
+                  <div class="field-country__control">
+                    <button class="field-country__button button" type="button">Чехия</button>
+
+                    <div class="field-country__options country-options">
+                      <div class="country-options__grid">
+                        <ul class="country-options__letters">
+                          <li class="country-options__letter country-options__letter--active">А</li>
+                          <li class="country-options__letter">Б</li>
+                          <li class="country-options__letter">В</li>
+                          <li class="country-options__letter">Г</li>
+                          <li class="country-options__letter">Д</li>
+                          <li class="country-options__letter">Е</li>
+                          <li class="country-options__letter">З</li>
+                          <li class="country-options__letter">И</li>
+                          <li class="country-options__letter">К</li>
+                          <li class="country-options__letter">Л</li>
+                          <li class="country-options__letter">М</li>
+                          <li class="country-options__letter">Н</li>
+                          <li class="country-options__letter">О</li>
+                          <li class="country-options__letter">П</li>
+                          <li class="country-options__letter">Р</li>
+                          <li class="country-options__letter">С</li>
+                          <li class="country-options__letter">Т</li>
+                          <li class="country-options__letter">У</li>
+                          <li class="country-options__letter">Ф</li>
+                          <li class="country-options__letter">Х</li>
+                          <li class="country-options__letter">Ч</li>
+                          <li class="country-options__letter">Ш</li>
+                          <li class="country-options__letter">Э</li>
+                          <li class="country-options__letter">Ю</li>
+                          <li class="country-options__letter">Я</li>
+                        </ul>
+                        <ul class="country-options__countrys">
+                          <li class="country-options__country">Австралия</li>
+                          <li class="country-options__country">Австрия</li>
+                          <li class="country-options__country">Азербайджан</li>
+                          <li class="country-options__country">Албания</li>
+                          <li class="country-options__country">Алжир</li>
+                          <li class="country-options__country">Ангола</li>
+                          <li class="country-options__country">Андорра</li>
+                          <li class="country-options__country">Антигуа и Барбуда</li>
+                          <li class="country-options__country">Аргентина</li>
+                          <li class="country-options__country">Армения</li>
+                          <li class="country-options__country">Афганистан</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="field-country__flag">
+                    <img class="field-country__flag-img" src="img/flag-czechia.png" srcset="img/flag-czechia.png 1x, img/flag-czechia@2x.png 2x" width="35" height="24" alt="Чехия.">
+                  </div>
+
+                  <button class="field-country__delete button" type="button">
+                    <span class="visually-hidden" aria-hidden="true" tabindex="-1">Удалить страну</span>
+                  </button>
+                </li>
+
+                <li class="field-country__item field-country__item--choice">
+                  <!-- field-country__control--open -->
+                  <div class="field-country__control">
+                    <button class="field-country__button button" type="button">Выберите страну</button>
+
+                    <div class="field-country__options country-options">
+                      <div class="country-options__grid">
+                        <ul class="country-options__letters">
+                          <li class="country-options__letter country-options__letter--active">А</li>
+                          <li class="country-options__letter">Б</li>
+                          <li class="country-options__letter">В</li>
+                          <li class="country-options__letter">Г</li>
+                          <li class="country-options__letter">Д</li>
+                          <li class="country-options__letter">Е</li>
+                          <li class="country-options__letter">З</li>
+                          <li class="country-options__letter">И</li>
+                          <li class="country-options__letter">К</li>
+                          <li class="country-options__letter">Л</li>
+                          <li class="country-options__letter">М</li>
+                          <li class="country-options__letter">Н</li>
+                          <li class="country-options__letter">О</li>
+                          <li class="country-options__letter">П</li>
+                          <li class="country-options__letter">Р</li>
+                          <li class="country-options__letter">С</li>
+                          <li class="country-options__letter">Т</li>
+                          <li class="country-options__letter">У</li>
+                          <li class="country-options__letter">Ф</li>
+                          <li class="country-options__letter">Х</li>
+                          <li class="country-options__letter">Ч</li>
+                          <li class="country-options__letter">Ш</li>
+                          <li class="country-options__letter">Э</li>
+                          <li class="country-options__letter">Ю</li>
+                          <li class="country-options__letter">Я</li>
+                        </ul>
+                        <ul class="country-options__countrys">
+                          <li class="country-options__country">Австралия</li>
+                          <li class="country-options__country">Австрия</li>
+                          <li class="country-options__country">Азербайджан</li>
+                          <li class="country-options__country">Албания</li>
+                          <li class="country-options__country">Алжир</li>
+                          <li class="country-options__country">Ангола</li>
+                          <li class="country-options__country">Андорра</li>
+                          <li class="country-options__country">Антигуа и Барбуда</li>
+                          <li class="country-options__country">Аргентина</li>
+                          <li class="country-options__country">Армения</li>
+                          <li class="country-options__country">Афганистан</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="field-country__delete button" type="button">
+                    <span class="visually-hidden" aria-hidden="true" tabindex="-1">Удалить страну</span>
+                  </button>
+                </li>
+
+                <li class="field-country__item field-country__item--add">
+                  <div class="field-country__control">
+                    <button class="field-country__button field-country__button--add button" type="button">
+                      Добавить страну
+                    </button>
+
+                    <div class="field-country__options country-options">
+                      <div class="country-options__grid">
+                        <ul class="country-options__letters">
+                          <li class="country-options__letter country-options__letter--active">А</li>
+                          <li class="country-options__letter">Б</li>
+                          <li class="country-options__letter">В</li>
+                          <li class="country-options__letter">Г</li>
+                          <li class="country-options__letter">Д</li>
+                          <li class="country-options__letter">Е</li>
+                          <li class="country-options__letter">З</li>
+                          <li class="country-options__letter">И</li>
+                          <li class="country-options__letter">К</li>
+                          <li class="country-options__letter">Л</li>
+                          <li class="country-options__letter">М</li>
+                          <li class="country-options__letter">Н</li>
+                          <li class="country-options__letter">О</li>
+                          <li class="country-options__letter">П</li>
+                          <li class="country-options__letter">Р</li>
+                          <li class="country-options__letter">С</li>
+                          <li class="country-options__letter">Т</li>
+                          <li class="country-options__letter">У</li>
+                          <li class="country-options__letter">Ф</li>
+                          <li class="country-options__letter">Х</li>
+                          <li class="country-options__letter">Ч</li>
+                          <li class="country-options__letter">Ш</li>
+                          <li class="country-options__letter">Э</li>
+                          <li class="country-options__letter">Ю</li>
+                          <li class="country-options__letter">Я</li>
+                        </ul>
+                        <ul class="country-options__countrys">
+                          <li class="country-options__country">Австралия</li>
+                          <li class="country-options__country">Австрия</li>
+                          <li class="country-options__country">Азербайджан</li>
+                          <li class="country-options__country">Албания</li>
+                          <li class="country-options__country">Алжир</li>
+                          <li class="country-options__country">Ангола</li>
+                          <li class="country-options__country">Андорра</li>
+                          <li class="country-options__country">Антигуа и Барбуда</li>
+                          <li class="country-options__country">Аргентина</li>
+                          <li class="country-options__country">Армения</li>
+                          <li class="country-options__country">Афганистан</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                </li>
+              </ul>
+            </div>
+
+            <div class="add-plan-step__footer">
+              <a class="add-plan-step__btn-next button button--yellow" href="#profile-add-plan-step-3">Следующий шаг</a>
+              <a class="add-plan-step__btn-prev button" href="#profile-add-plan-step-1">На шаг назад</a>
+            </div>
+          </fieldset>
+
+          <fieldset class="add-plan-step add-plan-step--third" id="profile-add-plan-step-3">
+            <div class="add-plan-step__header">
+              <legend class="add-plan-step__legend">
+                <span class="add-plan-step__number">Шаг 3. </span>
+                Развлечения
+              </legend>
+              <p class="add-plan-step__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+
+              <div class="add-plan-step__breadcrumb">
+                <ul class="add-plan-step-breadcrumb">
+                  <li class="add-plan-step-breadcrumb__item">
+                    Даты
+                  </li>
+                  <li class="add-plan-step-breadcrumb__item">
+                    Маршрут
+                  </li>
+                  <li class="add-plan-step-breadcrumb__item add-plan-step-breadcrumb__item--active">
+                    Развлечения
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="add-plan-step__fun">
+              <ul class="fields-fun">
+                <li class="fields-fun__item">
+                  <label class="fields-fun__grid">
+                    <span class="fields-fun__label">Босния и Герцеговина</span>
+                    <img class="fields-fun__flag" src="img/flag-bosnia.png" srcset="img/flag-bosnia.png 1x, img/flag-bosnia@2x.png 2x" width="35" height="24" alt="Босния и Герцеговина.">
+                    <textarea class="fields-fun__control" name="fun-1" placeholder="План действий"></textarea>
+                  </label>
+                </li>
+                <li class="fields-fun__item">
+                  <label class="fields-fun__grid">
+                    <span class="fields-fun__label">Чехия</span>
+                    <img class="fields-fun__flag" src="img/flag-czechia.png" srcset="img/flag-czechia.png 1x, img/flag-czechia@2x.png 2x" width="35" height="24" alt="Чехия.">
+                    <textarea class="fields-fun__control" name="fun-2" placeholder="План действий"></textarea>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="add-plan-step__footer">
+              <button class="add-plan-step__btn-next button button--yellow" type="submit">Отправить</button>
+              <a class="add-plan-step__btn-prev button" href="#profile-add-plan-step-2">На шаг назад</a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
