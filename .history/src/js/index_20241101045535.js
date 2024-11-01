@@ -17,7 +17,7 @@ let openMobileMenu = function() {
   if(header.classList.contains("header--open-mobile")) {
     header.classList.remove("header--open-mobile")
   } else {
-    header.classList.add("header--open-mobile")
+    header.classList.add("header--open-modile")
   }
 }
 

@@ -14,10 +14,10 @@ const fieldsCountry = document.querySelectorAll(".field-country__control")
 const btnsCompanionLike = document.querySelectorAll(".companion-like")
 
 let openMobileMenu = function() {
-  if(header.classList.contains("header--open-mobile")) {
-    header.classList.remove("header--open-mobile")
+  if(header.classList.contains("header--open-modile")) {
+    header.classList.remove("header--open-modile")
   } else {
-    header.classList.add("header--open-mobile")
+    header.classList.add("header--open-modile")
   }
 }
 
