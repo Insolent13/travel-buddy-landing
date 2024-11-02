@@ -1,0 +1,47 @@
+.field-country {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 26px;
+  
+    @media (min-width: @tablet-width) {
+      padding-top: 42px;
+      padding-bottom: 51px;
+  
+      &::after {
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: #e1e3e9;
+        position: absolute;
+        right: 137px;
+        top: 0;
+      }
+  
+      &::before {
+        content: "";
+        width: 100%;
+        height: 47px;
+        background: linear-gradient(transparent, 20%, #ffffff);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+      }
+    }
+  
+    @media (min-width: @desktop-width) {
+      padding-top: 62px;
+      padding-bottom: 57px;
+  
+      &::after {
+        right: 222px;
+      }
+  
+      &::before {
+        display: none;
+      }
+    }
+  }

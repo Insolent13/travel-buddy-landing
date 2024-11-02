@@ -1,0 +1,25 @@
+.header-avatar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -47px;
+}
+  
+  .header-avatar__img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+  
+  .header-avatar__button {
+    line-height: 47px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #161c35;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+  
+    &:active {
+      background-color: #dfe3f0;
+      color: rgba(22, 28, 53, 0.3);
+    }
+}

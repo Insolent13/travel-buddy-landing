@@ -1,0 +1,31 @@
+.profile-tag {
+    position: relative;
+}
+
+.profile-tag__title {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #edeff6;
+    width: 70px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    color: #1d2e5b;
+    margin: 0;
+    text-transform: uppercase;
+  
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      width: 82px;
+      top: calc(100% - 15px);
+      color: #161c35;
+    }
+  
+    @media (min-width: $desktop-width) {
+      left: 22px;
+      transform: none;
+    }
+}
+

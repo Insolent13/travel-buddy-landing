@@ -1,0 +1,35 @@
+.profile-add-plan-dotnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.profile-add-plan-dotnav__item {
+  width: 5px;
+  height: 5px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+.profile-add-plan-dotnav__item:not(:last-child) {
+  margin-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+  }
+}

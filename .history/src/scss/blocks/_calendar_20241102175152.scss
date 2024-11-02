@@ -1,0 +1,52 @@
+.calendar__header {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d6d9e6;
+    border-bottom: 1px solid #d6d9e6;
+    padding: 10px 0;
+    margin-bottom: 23px;
+  
+    @media (min-width: $tablet-width) {
+      padding: 26px 0 21px 0;
+      margin-bottom: 38px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      margin-bottom: 18px;
+    }
+}
+
+.calendar__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    color: #1d2e5b;
+    margin: 0;
+  
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+    }
+}
+
+.calendar__button {
+    &--prev {
+      @media (min-width: $tablet-width) {
+        margin-left: 20px;
+      }
+  
+      @media (min-width: $desktop-width) {
+        margin-left: 0;
+      }
+    }
+  
+    &--next {
+      @media (min-width: $tablet-width) {
+        margin-right: 20px;
+      }
+  
+      @media (min-width: $desktop-width) {
+        margin-right: 0;
+      }
+    }
+}
+

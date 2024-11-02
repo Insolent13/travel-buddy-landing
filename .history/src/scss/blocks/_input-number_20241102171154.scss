@@ -1,0 +1,21 @@
+.input-number {
+    height: 43px;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    transition: border-color 0.2s ease-in-out;
+  
+    &:hover {
+      border-color: #959bb2;
+  
+      .input-number__icon {
+        stroke: #959bb2;
+      }
+    }
+  
+    @media (min-width: @tablet-width) {
+      height: 70px;
+    }
+}

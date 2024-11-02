@@ -1,0 +1,50 @@
+.profile-add-plan {
+    background-color: #d4d9eb;
+    padding-top: 27px;
+    padding-bottom: 73px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -30px;
+  
+    @media (min-width: $tablet-width) {
+      padding-top: 52px;
+      padding-bottom: 123px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      padding-top: 55px;
+      padding-bottom: 134px;
+    }
+}
+
+.profile-add-plan__grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  
+    @media (min-width: $tablet-width) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+}
+
+.profile-add-plan__title {
+    font-size: 24px;
+    line-height: 1;
+    color: #1d2e5b;
+    font-weight: 700;
+    margin: 0;
+  
+    @media (min-width: @tablet-width) {
+      font-size: 36px;
+    }
+  
+    @media (min-width: @desktop-width) {
+      padding-left: 69px;
+    }
+}

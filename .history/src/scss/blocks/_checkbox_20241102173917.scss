@@ -1,0 +1,35 @@
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+    &:hover {
+      .checkbox__box {
+        border-color: #959bb2;
+      }
+    }
+}
+
+.checkbox__input {
+    position: absolute;
+    appearance: none;
+    outline: none;
+}
+
+.checkbox__box {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+    transition: border-color 0.2s ease-in-out;
+  
+    @media (min-width: $tablet-width) {
+      width: 36px;
+      height: 36px;
+    }
+}
+

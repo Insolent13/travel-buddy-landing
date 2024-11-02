@@ -1,0 +1,109 @@
+.field-country {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 26px;
+  
+    @media (min-width: $tablet-width) {
+      padding-top: 42px;
+      padding-bottom: 51px;
+  
+      &::after {
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: #e1e3e9;
+        position: absolute;
+        right: 137px;
+        top: 0;
+      }
+  
+      &::before {
+        content: "";
+        width: 100%;
+        height: 47px;
+        background: linear-gradient(transparent, 20%, #ffffff);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+      }
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-top: 62px;
+      padding-bottom: 57px;
+  
+      &::after {
+        right: 222px;
+      }
+  
+      &::before {
+        display: none;
+      }
+    }
+}
+
+.field-country__item {
+    display: grid;
+    grid-template-rows: 42px;
+    position: relative;
+  
+    @media (min-width: $tablet-width) {
+      grid-template-rows: 70px;
+    }
+}
+
+.field-country__item {
+    &:not(:last-child) {
+    margin-bottom: 22px;
+    }
+  
+    @media (max-width: $mobile-width-only) {
+      .field-country__control::before {
+        content: "";
+        width: 8px;
+        height: 11px;
+        position: absolute;
+        bottom: -17px;
+        background-image: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.646 10.354a.5.5 0 0 0 .708 0l3.182-3.182a.5.5 0 1 0-.708-.708L4 9.293 1.172 6.464a.5.5 0 1 0-.708.708l3.182 3.182ZM3.5 0v10h1V0h-1Z' fill='%23CBCED9'/%3E%3C/svg%3E");
+      }
+    }
+  
+    @media (min-width: $tablet-width) {
+      margin-bottom: 15px;
+    }
+}
+
+.field-country__item--checked {
+    grid-template-columns: minmax(1px, 1fr) auto;
+  
+    .field-country__control {
+      @media (min-width: @tablet-width) {
+        margin-right: 51px;
+      }
+  
+      @media (min-width: @desktop-width) {
+        margin-right: 85px;
+      }
+    }
+  
+    .field-country__control::after {
+      background-color: #1d2e5b;
+      border-color: #1d2e5b;
+    }
+  
+    @media (max-width: $mobile-width-only) {
+      .field-country__control::before,
+      .field-country__control::after {
+        right: -3px;
+      }
+    }
+  
+    @media (min-width: $tablet-width) {
+      grid-template-columns: minmax(1px, 1fr) auto auto;
+    }
+  }  
+  

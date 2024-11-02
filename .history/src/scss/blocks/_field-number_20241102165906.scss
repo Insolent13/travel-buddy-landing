@@ -1,0 +1,9 @@
+.field-number {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  
+    @media (min-width: @desktop-width) {
+      grid-template-columns: 220px 180px auto;
+      align-items: center;
+    }
+  }

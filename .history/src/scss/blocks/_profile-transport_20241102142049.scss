@@ -1,0 +1,25 @@
+.profile-transport {
+    position: relative;
+    border: 1px solid #cbced9;
+    border-radius: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    transition: border 0.2s ease-in-out;
+  
+    @media (min-width: tablet-width) {
+      padding-top: 25px;
+      padding-bottom: 26px;
+      min-width: 308px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      min-width: 384px;
+    }
+  
+    &:hover {
+      border-color: #aeb4cb;
+    }
+}

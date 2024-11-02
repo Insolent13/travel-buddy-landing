@@ -1,0 +1,51 @@
+.profile-transport {
+    position: relative;
+    border: 1px solid #cbced9;
+    border-radius: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    transition: border 0.2s ease-in-out;
+  
+    @media (min-width: $tablet-width) {
+      padding-top: 25px;
+      padding-bottom: 26px;
+      min-width: 308px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      min-width: 384px;
+    }
+  
+    &:hover {
+      border-color: #aeb4cb;
+    }
+}
+
+.profile-transport__title {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #edeff6;
+    width: 111px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1;
+    color: #1d2e5b;
+    margin: 0;
+    text-transform: uppercase;
+  
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      width: 154px;
+      top: calc(100% - 8px);
+      color: #1d2e5b;
+    }
+  
+    @media (min-width: $desktop-width) {
+      letter-spacing: 0.1em;
+    }
+}

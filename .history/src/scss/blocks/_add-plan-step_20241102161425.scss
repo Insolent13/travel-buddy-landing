@@ -1,0 +1,165 @@
+.add-plan-step {
+    border: 0;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px 25px 24px 25px;
+  
+    @media (min-width: $tablet-width) {
+      padding: 48px 43px 56px 40px;
+      border-radius: 30px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding: 100px 160px 106px 160px;
+      border-radius: 60px;
+    }
+}
+
+.add-plan-step--first {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr auto;
+    }
+  
+    .add-plan-step__header {
+      margin-bottom: 17px;
+  
+      @media (min-width: $tablet-width) {
+        margin-bottom: 26px;
+      }
+  
+      @media (min-width: $desktop-width) {
+        margin-bottom: 30px;
+      }
+    }
+  
+    .add-plan-step__text {
+      @media (min-width: $tablet-width) {
+        max-width: 520px;
+      }
+  
+      @media (min-width: $desktop-width) {
+        max-width: 100%;
+      }
+    }
+  
+    .add-plan-step__calendar {
+      @media (min-width: $tablet-width) {
+        order: 4;
+      }
+    }
+  
+    .add-plan-step__footer {
+      @media (min-width: $tablet-width) {
+        order: 5;
+      }
+  
+      @media (min-width: $desktop-width) {
+        grid-column: 1/ -1;
+        grid-row: 5 / 6;
+        justify-self: start;
+      }
+    }
+}
+
+.add-plan-step--second {
+    padding-bottom: 9px;
+  
+    @media (min-width: $tablet-width) {
+      padding-bottom: 53px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-bottom: 104px;
+    }
+  
+    .add-plan-step__header {
+      margin-bottom: 0;
+  
+      @media (min-width: $tablet-width) {
+        padding-bottom: 29px;
+      }
+  
+      @media (min-width: $desktop-width) {
+        padding-bottom: 52px;
+      }
+    }
+  
+    .add-plan-step__text {
+      @media (min-width: $tablet-width) {
+        max-width: 440px;
+      }
+    }
+  
+    .add-plan-step__footer {
+      @media (min-width: $desktop-width) {
+        &::after {
+          content: "";
+          width: 1px;
+          height: calc(100% + 14px);
+          background-color: #e1e3e9;
+          position: absolute;
+          top: 0;
+          right: 222px;
+        }
+      }
+    }
+}
+
+.add-plan-step--third {
+    padding-bottom: 8px;
+  
+    @media (min-width: @tablet-width) {
+      padding-bottom: 53px;
+    }
+  
+    @media (min-width: @desktop-width) {
+      padding-bottom: 107px;
+    }
+  
+    .add-plan-step__header {
+      margin-bottom: 20px;
+  
+      @media (min-width: @tablet-width) {
+        padding-bottom: 31px;
+        margin-bottom: 27px;
+      }
+  
+      @media (min-width: @desktop-width) {
+        padding-bottom: 54px;
+        margin-bottom: 72px;
+      }
+    }
+  
+    .add-plan-step__text {
+      @media (min-width: @tablet-width) {
+        max-width: 480px;
+      }
+    }
+  
+    .add-plan-step__footer {
+      margin-top: 22px;
+  
+      @media (min-width: @tablet-width) {
+        margin-top: 48px;
+      }
+  
+      @media (min-width: @desktop-width) {
+        margin-top: 62px;
+      }
+    }
+  
+    .add-plan-step__btn-next {
+      @media (min-width: @tablet-width) {
+        min-width: 286px;
+      }
+    }
+  }
+  
+  

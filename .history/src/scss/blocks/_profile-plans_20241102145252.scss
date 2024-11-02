@@ -1,0 +1,32 @@
+.profile-plans {
+    background-color: #dfe3f0;
+    padding-top: 28px;
+    padding-bottom: 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  
+    @media (min-width: $tablet-width) {
+      padding-top: 57px;
+      padding-bottom: 105px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+      padding-top: 52px;
+      padding-bottom: 90px;
+    }
+}
+
+.profile-plans__grid {
+    @media (min-width: $tablet-width) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      padding-left: 64px;
+      padding-right: 0;
+    }
+}
+

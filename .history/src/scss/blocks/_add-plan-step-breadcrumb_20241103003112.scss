@@ -1,0 +1,40 @@
+.add-plan-step-breadcrumb {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.add-plan-step-breadcrumb__item {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  opacity: 0.6;
+  padding-left: 36px;
+  letter-spacing: 0.1em;
+
+  &--active {
+    opacity: 1;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 43px;
+  }
+}

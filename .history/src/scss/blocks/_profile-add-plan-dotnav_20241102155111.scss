@@ -1,0 +1,10 @@
+.profile-add-plan-dotnav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+}

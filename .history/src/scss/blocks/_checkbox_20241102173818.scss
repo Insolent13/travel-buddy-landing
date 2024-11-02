@@ -1,0 +1,18 @@
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+    &:hover {
+      .checkbox__box {
+        border-color: #959bb2;
+      }
+    }
+}
+
+.checkbox__input {
+    position: absolute;
+    appearance: none;
+    outline: none;
+}
