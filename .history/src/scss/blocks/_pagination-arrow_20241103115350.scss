@@ -1,0 +1,11 @@
+.pagination-arrow {
+    @media (max-width: @mobile-width-only) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1px;
+    }
+  
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
