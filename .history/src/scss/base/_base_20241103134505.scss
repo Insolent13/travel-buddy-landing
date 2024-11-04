@@ -1,0 +1,20 @@
+.page {
+	height: 100;;
+	
+	scroll-behavior: smooth;
+}
+
+.page__body {
+	margin: 0;
+	padding: 0;
+	font-family: "Blogger Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.38;
+	background: #edeff6;
+	color: #444444;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+

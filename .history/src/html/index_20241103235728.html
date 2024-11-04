@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Информация о сервисе для поиска попутчиков Погали">
+	<title>HTML Academy: Погнали</title>
+	<link rel="preload" href="fonts/bloggersans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+	<link rel="icon" type="image/x-icon" href="./img/favicons/icon.svg">
+	<link rel="apple-touch-icon" href="./img/favicons/apple.png" sizes="180x180">
+	<link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="page__body">
+	@@include('blocks/header.html')
+	<main class="main">
+		@@include('blocks/promo.html')
+		@@include('blocks/about.html')
+		@@include('blocks/countries-promo.html')
+		@@include('blocks/companions-promo.html')
+		@@include('blocks/profile.html')
+		@@include('blocks/feedback.html')
+		@@include('blocks/location.html')
+		@@include('blocks/map.html')
+	</main>
+	@@include('blocks/footer.html')
+	@@include('blocks/modal.html')
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
